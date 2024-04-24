@@ -1,30 +1,21 @@
 class Solution {
 public:
     bool isMatch(string s, string p) {
-        int m = s.length();
-        int n = p.length();
+        int m = s.size(), n = p.size();
         vector<vector<bool>> dp(m + 1, vector<bool>(n + 1, false));
-        
-        dp[0][0] = true;
-        
-        for (int j = 1; j <= n; j++) {
-            if (p[j - 1] == '*') {
-                dp[0][j] = dp[0][j - 2];
-            }
-        }
-        
-        for (int i = 1; i <= m; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (p[j - 1] == '.') {
-                    dp[i][j] = dp[i - 1][j - 1];
-                } else if (p[j - 1] == '*') {
-                    dp[i][j] = dp[i][j - 2] || (dp[i - 1][j] && (s[i - 1] == p[j - 2] || p[j - 2] == '.'));
+        dp[m][n] = true;
+
+        for (int i = m; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                bool firstMatch = (i < m && (p[j] == '.' || s[i] == p[j]));
+                if (j + 1 < n && p[j + 1] == '*') {
+                    dp[i][j] = dp[i][j + 2] || (firstMatch && dp[i + 1][j]);
                 } else {
-                    dp[i][j] = dp[i - 1][j - 1] && (s[i - 1] == p[j - 1]);
+                    dp[i][j] = firstMatch && dp[i + 1][j + 1];
                 }
             }
         }
-        
-        return dp[m][n];
+
+        return dp[0][0];
     }
 };
