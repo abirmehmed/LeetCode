@@ -4,26 +4,19 @@ class Solution {
         int n = p.length();
         boolean[][] dp = new boolean[m + 1][n + 1];
         
-        dp[0][0] = true;
+        dp[m][n] = true;
         
-        for (int j = 1; j <= n; j++) {
-            if (p.charAt(j - 1) == '*') {
-                dp[0][j] = dp[0][j - 2];
-            }
-        }
-        
-        for (int i = 1; i <= m; i++) {
-            for (int j = 1; j <= n; j++) {
-                if (p.charAt(j - 1) == '.') {
-                    dp[i][j] = dp[i - 1][j - 1];
-                } else if (p.charAt(j - 1) == '*') {
-                    dp[i][j] = dp[i][j - 2] || (dp[i - 1][j] && (s.charAt(i - 1) == p.charAt(j - 2) || p.charAt(j - 2) == '.'));
+        for (int i = m; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                boolean firstMatch = (i < m && (p.charAt(j) == '.' || s.charAt(i) == p.charAt(j)));
+                if (j + 1 < n && p.charAt(j + 1) == '*') {
+                    dp[i][j] = dp[i][j + 2] || (firstMatch && dp[i + 1][j]);
                 } else {
-                    dp[i][j] = dp[i - 1][j - 1] && (s.charAt(i - 1) == p.charAt(j - 1));
+                    dp[i][j] = firstMatch && dp[i + 1][j + 1];
                 }
             }
         }
         
-        return dp[m][n];
+        return dp[0][0];
     }
 }
