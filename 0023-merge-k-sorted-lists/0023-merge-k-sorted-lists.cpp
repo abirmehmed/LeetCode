@@ -1,8 +1,6 @@
 #include <vector>
 #include <queue>
 
-// Do not redefine ListNode. Use the one from the precompiled header.
-
 struct Compare {
     bool operator()(ListNode* l1, ListNode* l2) {
         return l1->val > l2->val;
