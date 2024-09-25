@@ -1,7 +1,9 @@
-from typing import List
-
-class Solution:
-    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+class Solution(object):
+    def uniquePathsWithObstacles(self, obstacleGrid):
+        """
+        :type obstacleGrid: List[List[int]]
+        :rtype: int
+        """
         m, n = len(obstacleGrid), len(obstacleGrid[0])
         
         # If the starting cell has an obstacle, return 0
