@@ -2,6 +2,8 @@
 #include <stack>
 using namespace std;
 
+// Assuming TreeNode is already defined in the environment
+
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
