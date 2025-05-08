@@ -1,65 +1,31 @@
-// Definition for singly-linked list.
-// #[derive(PartialEq, Eq, Clone, Debug)]
-// pub struct ListNode {
-//   pub val: i32,
-//   pub next: Option<Box<ListNode>>
-// }
-// 
-// impl ListNode {
-//   #[inline]
-//   fn new(val: i32) -> Self {
-//     ListNode {
-//       next: None,
-//       val
-//     }
-//   }
-// }
-
 impl Solution {
-    pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        // Create a dummy head node to simplify the logic
+    pub fn add_two_numbers(
+        l1: Option<Box<ListNode>>, 
+        l2: Option<Box<ListNode>>
+    ) -> Option<Box<ListNode>> {
         let mut dummy_head = ListNode::new(0);
         let mut current = &mut dummy_head;
-        
-        // Variables to track the current nodes and carry
-        let mut p1 = l1;
-        let mut p2 = l2;
         let mut carry = 0;
+        let mut p = l1;
+        let mut q = l2;
         
-        // Continue until both lists are exhausted and there's no carry
-        while p1.is_some() || p2.is_some() || carry > 0 {
-            // Get values from current nodes or use 0 if node doesn't exist
-            let x = match &p1 {
-                Some(node) => node.val,
-                None => 0,
-            };
+        while p.is_some() || q.is_some() {
+            let sum = carry + 
+                p.as_ref().map_or(0, |node| node.val) + 
+                q.as_ref().map_or(0, |node| node.val);
             
-            let y = match &p2 {
-                Some(node) => node.val,
-                None => 0,
-            };
-            
-            // Calculate sum and new carry
-            let sum = x + y + carry;
             carry = sum / 10;
-            
-            // Create new node with the digit (sum % 10)
             current.next = Some(Box::new(ListNode::new(sum % 10)));
             current = current.next.as_mut().unwrap();
             
-            // Move to next nodes if they exist
-            p1 = match p1 {
-                Some(node) => node.next,
-                None => None,
-            };
-            
-            p2 = match p2 {
-                Some(node) => node.next,
-                None => None,
-            };
+            p = p.and_then(|node| node.next);
+            q = q.and_then(|node| node.next);
         }
         
-        // Return the result linked list (skipping the dummy head)
+        if carry > 0 {
+            current.next = Some(Box::new(ListNode::new(carry)));
+        }
+        
         dummy_head.next
     }
 }
