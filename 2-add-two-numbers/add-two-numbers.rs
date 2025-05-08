@@ -1,19 +1,34 @@
+// Definition for singly-linked list.
+// #[derive(PartialEq, Eq, Clone, Debug)]
+// pub struct ListNode {
+//   pub val: i32,
+//   pub next: Option<Box<ListNode>>
+// }
+// 
+// impl ListNode {
+//   #[inline]
+//   fn new(val: i32) -> Self {
+//     ListNode {
+//       next: None,
+//       val
+//     }
+//   }
+// }
+
 impl Solution {
     pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
-        // Create a dummy head for the result linked list
-        let mut dummy_head = Box::new(ListNode::new(0));
+        // Create a dummy head node to simplify the logic
+        let mut dummy_head = ListNode::new(0);
         let mut current = &mut dummy_head;
         
-        // Initialize carry
-        let mut carry = 0;
-        
-        // Initialize mutable references to our input lists
+        // Variables to track the current nodes and carry
         let mut p1 = l1;
         let mut p2 = l2;
+        let mut carry = 0;
         
-        // Process both linked lists until we reach the end of both
+        // Continue until both lists are exhausted and there's no carry
         while p1.is_some() || p2.is_some() || carry > 0 {
-            // Get values from current nodes (or 0 if we've reached the end)
+            // Get values from current nodes or use 0 if node doesn't exist
             let x = match &p1 {
                 Some(node) => node.val,
                 None => 0,
@@ -27,13 +42,12 @@ impl Solution {
             // Calculate sum and new carry
             let sum = x + y + carry;
             carry = sum / 10;
-            let digit = sum % 10;
             
-            // Create new node with current digit
-            current.next = Some(Box::new(ListNode::new(digit)));
+            // Create new node with the digit (sum % 10)
+            current.next = Some(Box::new(ListNode::new(sum % 10)));
             current = current.next.as_mut().unwrap();
             
-            // Move to next nodes if available
+            // Move to next nodes if they exist
             p1 = match p1 {
                 Some(node) => node.next,
                 None => None,
@@ -45,7 +59,7 @@ impl Solution {
             };
         }
         
-        // Return result list (skip the dummy head)
+        // Return the result linked list (skipping the dummy head)
         dummy_head.next
     }
 }
