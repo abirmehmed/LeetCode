@@ -2,8 +2,8 @@ name: LeetCode Auto Sync
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
-  workflow_dispatch:
+    - cron: '0 */4 * * *'  # Runs every 4 hours
+  workflow_dispatch:       # Allows manual trigger
 
 jobs:
   sync:
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Fetch LeetCode Submissions
-        uses: wellle/leetcode-sync@v1
+        uses: kawarimidoll/leetcode-submissions@v1
         with:
           username: abirmehmed
           output_dir: ./solutions
