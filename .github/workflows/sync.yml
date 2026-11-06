@@ -2,21 +2,39 @@ name: LeetCode Auto Sync
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # Runs every 4 hours
-  workflow_dispatch:       # Allows manual trigger
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Fetch LeetCode Submissions
-        uses: kawarimidoll/leetcode-submissions@v1
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          username: abirmehmed
-          output_dir: ./solutions
-
+          python-version: '3.x'
+          
+      - name: Install dependencies
+        run: pip install leetcode-cli
+        
+      - name: Login to LeetCode
+        env:
+          LEETCODE_SESSION: ${{ secrets.LEETCODE_SESSION }}
+        run: |
+          leetcode user -l --session "$LEETCODE_SESSION"
+          
+      - name: Fetch Submissions
+        run: |
+          mkdir -p solutions
+          cd solutions
+          # Fetch all accepted submissions in Rust and C++
+          leetcode list -q -c | grep -E "\[AC\]" | awk '{print $1}' | while read id; do
+            leetcode show $id -g rust || true
+            leetcode show $id -g cpp || true
+          done
+          
       - name: Commit and Push
         run: |
           git config user.name "abirmehmed"
