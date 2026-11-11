@@ -31,4 +31,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0110-balanced-binary-tree](https://github.com/abirmehmed/LeetCode/tree/main/0110-balanced-binary-tree/) | Easy |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/abirmehmed/LeetCode/tree/main/3789-minimum-cost-to-acquire-required-items/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3789-minimum-cost-to-acquire-required-items](https://github.com/abirmehmed/LeetCode/tree/main/3789-minimum-cost-to-acquire-required-items/) | Medium |
 <!---LeetCode Topics End-->
