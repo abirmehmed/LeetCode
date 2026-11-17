@@ -54,8 +54,13 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/abirmehmed/LeetCode/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/abirmehmed/LeetCode/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 ## Ordered Set
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/abirmehmed/LeetCode/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/abirmehmed/LeetCode/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 <!---LeetCode Topics End-->
