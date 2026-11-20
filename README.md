@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/abirmehmed/LeetCode/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
 | [2567-minimum-score-by-changing-two-elements](https://github.com/abirmehmed/LeetCode/tree/main/2567-minimum-score-by-changing-two-elements/) | Medium |
 | [2747-count-zero-request-servers](https://github.com/abirmehmed/LeetCode/tree/main/2747-count-zero-request-servers/) | Medium |
+| [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/abirmehmed/LeetCode/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
 | [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/abirmehmed/LeetCode/tree/main/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy |
 | [3693-climbing-stairs-ii](https://github.com/abirmehmed/LeetCode/tree/main/3693-climbing-stairs-ii/) | Medium |
 ## Hash Table
@@ -24,6 +25,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [2567-minimum-score-by-changing-two-elements](https://github.com/abirmehmed/LeetCode/tree/main/2567-minimum-score-by-changing-two-elements/) | Medium |
 | [2747-count-zero-request-servers](https://github.com/abirmehmed/LeetCode/tree/main/2747-count-zero-request-servers/) | Medium |
+| [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/abirmehmed/LeetCode/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -48,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/abirmehmed/LeetCode/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
 | [3693-climbing-stairs-ii](https://github.com/abirmehmed/LeetCode/tree/main/3693-climbing-stairs-ii/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
