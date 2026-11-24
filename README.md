@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2747-count-zero-request-servers](https://github.com/abirmehmed/LeetCode/tree/main/2747-count-zero-request-servers/) | Medium |
 | [3041-maximize-consecutive-elements-in-an-array-after-modification](https://github.com/abirmehmed/LeetCode/tree/main/3041-maximize-consecutive-elements-in-an-array-after-modification/) | Hard |
 | [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/abirmehmed/LeetCode/tree/main/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy |
+| [3411-maximum-subarray-with-equal-products](https://github.com/abirmehmed/LeetCode/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3693-climbing-stairs-ii](https://github.com/abirmehmed/LeetCode/tree/main/3693-climbing-stairs-ii/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -20,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2747-count-zero-request-servers](https://github.com/abirmehmed/LeetCode/tree/main/2747-count-zero-request-servers/) | Medium |
+| [3411-maximum-subarray-with-equal-products](https://github.com/abirmehmed/LeetCode/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -41,6 +43,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3411-maximum-subarray-with-equal-products](https://github.com/abirmehmed/LeetCode/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3789-minimum-cost-to-acquire-required-items](https://github.com/abirmehmed/LeetCode/tree/main/3789-minimum-cost-to-acquire-required-items/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
@@ -70,4 +73,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/abirmehmed/LeetCode/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [2914-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/abirmehmed/LeetCode/tree/main/2914-minimum-number-of-changes-to-make-binary-string-beautiful/) | Medium |
+## Enumeration
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3411-maximum-subarray-with-equal-products](https://github.com/abirmehmed/LeetCode/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
+## Number Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3411-maximum-subarray-with-equal-products](https://github.com/abirmehmed/LeetCode/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 <!---LeetCode Topics End-->
