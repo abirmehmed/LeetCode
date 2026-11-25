@@ -13,10 +13,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/abirmehmed/LeetCode/tree/main/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy |
 | [3411-maximum-subarray-with-equal-products](https://github.com/abirmehmed/LeetCode/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3693-climbing-stairs-ii](https://github.com/abirmehmed/LeetCode/tree/main/3693-climbing-stairs-ii/) | Medium |
+| [3934-smallest-unique-subarray](https://github.com/abirmehmed/LeetCode/tree/main/3934-smallest-unique-subarray/) | Hard |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2747-count-zero-request-servers](https://github.com/abirmehmed/LeetCode/tree/main/2747-count-zero-request-servers/) | Medium |
+| [3934-smallest-unique-subarray](https://github.com/abirmehmed/LeetCode/tree/main/3934-smallest-unique-subarray/) | Hard |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -81,4 +83,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3411-maximum-subarray-with-equal-products](https://github.com/abirmehmed/LeetCode/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/abirmehmed/LeetCode/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Rolling Hash
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/abirmehmed/LeetCode/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Suffix Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/abirmehmed/LeetCode/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Hash Function
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/abirmehmed/LeetCode/tree/main/3934-smallest-unique-subarray/) | Hard |
 <!---LeetCode Topics End-->
