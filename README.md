@@ -45,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3360-stone-removal-game](https://github.com/abirmehmed/LeetCode/tree/main/3360-stone-removal-game/) | Easy |
 | [3411-maximum-subarray-with-equal-products](https://github.com/abirmehmed/LeetCode/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3789-minimum-cost-to-acquire-required-items](https://github.com/abirmehmed/LeetCode/tree/main/3789-minimum-cost-to-acquire-required-items/) | Medium |
 ## Greedy
@@ -66,6 +67,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/abirmehmed/LeetCode/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
 | [2243-calculate-digit-sum-of-a-string](https://github.com/abirmehmed/LeetCode/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
+| [3360-stone-removal-game](https://github.com/abirmehmed/LeetCode/tree/main/3360-stone-removal-game/) | Easy |
 ## Ordered Set
 | Problem Name | Difficulty |
 | ------- | ------- |
